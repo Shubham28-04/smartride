@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartRide Driver Dashboard</title>
+
+    <!-- Optional CSS (for polish) -->
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+    <h2>🚕 SmartRide Driver Dashboard</h2>
+
+    <!-- DRIVER STATUS -->
+    <p>
+        Status:
+        <b id="driverStatus" style="color:green;">ONLINE</b>
+    </p>
+
+    <button id="toggleBtn" onclick="toggleStatus()">Go OFFLINE</button>
+
+    <hr>
+
+    <!-- LIVE DEMAND -->
+    <h3>📡 Live Ride Requests</h3>
+    <ul id="rides">
+        <!-- Ride requests will appear here -->
+    </ul>
+
+    <hr>
+
+    <!-- HOT AREAS -->
+    <h3>🔥 Hot Areas</h3>
+    <ul id="hotAreas">
+        <!-- Hot areas will appear here -->
+    </ul>
+
+    <!-- DRIVER LOGIC -->
+    <script src="driver.js"></script>
+</body>
+</html>

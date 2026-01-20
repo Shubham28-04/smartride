@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+/* HEADER */
+.ride-header {
+    background: #ffcc00;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* MAP */
+#map {
+    height: 60vh;
+    width: 100%;
+}
+
+/* INFO PANEL */
+.info-panel {
+    background: white;
+    padding: 16px;
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.1);
+}
+
+/* DRIVER INFO */
+.driver-info {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    font-size: 32px;
+    margin-right: 12px;
+}
+
+/* META */
+.ride-meta {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* ACTIONS */
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.secondary {
+    background: #ddd;
+}
+
+.danger {
+    background: #e53935;
+    color: white;
+}
+button {
+    width: 100%;
+    padding: 14px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+button:active {
+    transform: scale(0.96);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}

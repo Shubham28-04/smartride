@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f5f5f5;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* MAIN CONTAINER */
+.complete-container {
+    background: white;
+    width: 90%;
+    max-width: 360px;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* ICON */
+.success-icon {
+    font-size: 40px;
+}
+
+/* SUBTEXT */
+.subtext {
+    font-size: 14px;
+    color: #555;
+}
+
+/* SUMMARY */
+.summary {
+    margin: 16px 0;
+    font-size: 14px;
+    text-align: left;
+}
+
+/* RATING */
+.rating {
+    margin: 16px 0;
+}
+
+.stars span {
+    font-size: 26px;
+    cursor: pointer;
+}
+
+#ratingText {
+    display: block;
+    margin-top: 6px;
+    font-size: 12px;
+    color: #555;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 14px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}

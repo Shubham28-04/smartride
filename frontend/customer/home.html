@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartRide – Home</title>
+
+    <!-- Leaflet Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="top-bar">
+    <div class="logo">◉ SmartRide</div>
+    <div class="user" id="userInfo"></div>
+</header>
+
+<!-- MAP -->
+<div id="map"></div>
+
+<!-- BOTTOM SHEET -->
+<div class="sheet">
+    <p class="hint">📍 Nearest driver is <b>5 mins away</b></p>
+
+    <input id="pickup" type="text" placeholder="Pickup location">
+    <input id="drop" type="text" placeholder="Where are you going?">
+
+    <button onclick="goToVehicleSelection()">Continue</button>
+</div>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/home.js"></script>
+
+</body>
+</html>

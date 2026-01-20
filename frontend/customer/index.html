@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartRide</title>
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="top-bar">
+    <div class="logo">
+        <div class="logo-icon">◉</div>
+        <span>SmartRide</span>
+    </div>
+</header>
+
+<!-- MAP -->
+<div id="map"></div>
+
+<!-- BOTTOM SHEET -->
+<div class="sheet">
+
+    <p class="hint">📍 Nearest driver is <b>5 mins away</b></p>
+
+    <input id="pickup" type="text" placeholder="Pickup location">
+    <input id="drop" type="text" placeholder="Drop location">
+
+    <!-- VEHICLE OPTIONS -->
+    <div class="vehicles">
+        <div class="vehicle active" onclick="selectVehicle('bike')">
+            🏍 Bike<br><small>₹39 • 5 min</small>
+        </div>
+        <div class="vehicle" onclick="selectVehicle('auto')">
+            🛺 Auto<br><small>₹59 • 6 min</small>
+        </div>
+        <div class="vehicle" onclick="selectVehicle('cab')">
+            🚕 Cab<br><small>₹99 • 8 min</small>
+        </div>
+    </div>
+
+    <button onclick="bookRide()">Request SmartRide</button>
+
+    <p class="status" id="statusText"></p>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

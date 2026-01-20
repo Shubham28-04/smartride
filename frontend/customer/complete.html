@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartRide – Ride Completed</title>
+    <link rel="stylesheet" href="css/complete.css">
+</head>
+<body>
+
+<div class="complete-container">
+
+    <div class="success-icon">✅</div>
+
+    <h2>Ride Completed</h2>
+    <p class="subtext">Hope you had a smooth ride with SmartRide</p>
+
+    <div class="summary">
+        <p><b>Driver:</b> <span id="driverName"></span></p>
+        <p><b>Vehicle:</b> <span id="vehicleType"></span></p>
+        <p><b>Total Fare:</b> ₹<span id="fare"></span></p>
+    </div>
+
+    <div class="rating">
+        <p>Rate your ride</p>
+        <div class="stars">
+            <span onclick="rate(1)">⭐</span>
+            <span onclick="rate(2)">⭐</span>
+            <span onclick="rate(3)">⭐</span>
+            <span onclick="rate(4)">⭐</span>
+            <span onclick="rate(5)">⭐</span>
+        </div>
+        <small id="ratingText"></small>
+    </div>
+
+    <button onclick="finishRide()">Done</button>
+
+</div>
+
+<script src="js/complete.js"></script>
+</body>
+</html>

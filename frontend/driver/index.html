@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartRide Driver</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>🚖 SmartRide Driver</h1>
+    <p id="statusText">You are Offline</p>
+</header>
+
+<div class="container">
+
+    <!-- STATUS -->
+    <div class="card">
+        <button id="statusBtn" onclick="toggleStatus()">Go Online</button>
+    </div>
+
+    <!-- DEMAND -->
+    <div class="card">
+        <h2>📊 Ride Demand</h2>
+        <p id="demandCount">No active requests</p>
+    </div>
+
+    <!-- HOT AREAS -->
+    <div class="card">
+        <h2>🔥 Hot Areas</h2>
+        <div class="zone red">Shivaji Nagar</div>
+        <div class="zone yellow">Pune Station</div>
+    </div>
+
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

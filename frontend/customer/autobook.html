@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartRide – Auto Book</title>
+    <link rel="stylesheet" href="css/autobook.css">
+</head>
+<body>
+
+<div class="auto-container">
+
+    <h2>⏰ Auto Book Taxi</h2>
+    <p class="subtext">Your ride will be booked automatically</p>
+
+    <div class="summary">
+        <p><b>From:</b> <span id="pickup"></span></p>
+        <p><b>To:</b> <span id="drop"></span></p>
+    </div>
+
+    <label>Preferred Time</label>
+    <input type="time" id="time">
+
+    <label>Vehicle</label>
+    <select id="vehicle">
+        <option value="bike">Bike</option>
+        <option value="auto">Auto</option>
+        <option value="cab">Cab</option>
+    </select>
+
+    <label>
+        <input type="checkbox" checked disabled>
+        Repeat daily
+    </label>
+
+    <button onclick="saveAutoBook()">Save Auto Booking</button>
+
+    <p id="status"></p>
+
+</div>
+
+<script src="js/autobook.js"></script>
+</body>
+</html>
+<hr>
+
+<div class="control-section">
+    <p>
+        Auto-Book Status:
+        <b id="autoStatus">Checking...</b>
+    </p>
+
+    <button id="pauseBtn" onclick="pauseAutoBook()">Pause Auto-Book</button>
+    <button id="resumeBtn" onclick="resumeAutoBook()" style="display:none;">
+        Resume Auto-Book
+    </button>
+</div>

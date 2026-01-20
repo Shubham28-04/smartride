@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartRide – Choose Vehicle</title>
+    <link rel="stylesheet" href="css/vehicle.css">
+</head>
+<body>
+
+<header class="top-bar">
+    <div class="logo">◉ SmartRide</div>
+</header>
+
+<div class="route">
+    <p><b>From:</b> <span id="pickupText"></span></p>
+    <p><b>To:</b> <span id="dropText"></span></p>
+</div>
+
+<div class="vehicles">
+
+    <div class="vehicle-card active" onclick="selectVehicle('bike', 39, 5)">
+        <div class="icon">🏍</div>
+        <div class="info">
+            <h3>Bike</h3>
+            <p>Fast & economical</p>
+        </div>
+        <div class="meta">
+            <span>₹39</span>
+            <small>5 min</small>
+        </div>
+    </div>
+
+    <div class="vehicle-card" onclick="selectVehicle('auto', 59, 6)">
+        <div class="icon">🛺</div>
+        <div class="info">
+            <h3>Auto</h3>
+            <p>Balanced ride</p>
+        </div>
+        <div class="meta">
+            <span>₹59</span>
+            <small>6 min</small>
+        </div>
+    </div>
+
+    <div class="vehicle-card" onclick="selectVehicle('cab', 99, 8)">
+        <div class="icon">🚕</div>
+        <div class="info">
+            <h3>Cab</h3>
+            <p>Comfort ride</p>
+        </div>
+        <div class="meta">
+            <span>₹99</span>
+            <small>8 min</small>
+        </div>
+    </div>
+
+</div>
+
+<button class="confirm-btn" onclick="confirmRide()">Confirm Ride</button>
+
+<script src="js/vehicle.js"></script>
+</body>
+</html>

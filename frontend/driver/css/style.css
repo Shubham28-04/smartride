@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+/* HEADER */
+.header {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 420px;
+    margin: auto;
+    padding: 15px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+button.offline {
+    background: #dc3545;
+}
+
+/* HOT ZONES */
+.zone {
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 8px;
+    color: white;
+}
+
+.red { background: #e53935; }
+.yellow { background: #fbc02d; color: black; }
+/* ==========================
+   DRIVER DASHBOARD STYLES
+========================== */
+
+#rides li, #hotAreas li {
+    margin: 8px 0;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    list-style: none;
+}
+
+#rides button {
+    margin-left: 10px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background: #ffcc00;
+    font-weight: bold;
+}
+
+#rides button:hover {
+    opacity: 0.85;
+}
+
+#toggleBtn {
+    margin-top: 10px;
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: #ffcc00;
+    font-weight: bold;
+}

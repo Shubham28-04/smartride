@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartRide – Ride in Progress</title>
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/ride.css">
+</head>
+<body>
+
+<header class="ride-header">
+    <span>🚕 Ride in progress</span>
+</header>
+
+<!-- MAP -->
+<div id="map"></div>
+
+<!-- INFO PANEL -->
+<div class="info-panel">
+
+    <div class="driver-info">
+        <div class="avatar">👤</div>
+        <div>
+            <p><b id="driverName"></b></p>
+            <small>⭐ <span id="driverRating"></span></small>
+        </div>
+    </div>
+
+    <div class="ride-meta">
+        <p><b>Vehicle:</b> <span id="vehicleType"></span></p>
+        <p><b>Fare:</b> ₹<span id="fare"></span></p>
+    </div>
+
+    <div class="actions">
+        <button class="secondary" onclick="callDriver()">Call</button>
+        <button class="danger" onclick="cancelRide()">Cancel</button>
+    </div>
+
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/ride.js"></script>
+
+</body>
+</html>
