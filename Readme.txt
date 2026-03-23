@@ -13,15 +13,6 @@ It supports:
 🌍 Real-time style APIs
 
 ☁️ Public backend deployment (Render)
-
-This project is designed to be:
-
-Beginner friendly
-
-Interview ready
-
-Easy to run locally
-
 Easy to deploy publicly
 
 📌 Live Backend (Public)
@@ -244,8 +235,7 @@ PostgreSQL database
 
 Mobile app (React Native)
 
-👨‍💻 Author
-
+👨‍💻 Author:
 Shubham
 B.Tech CSE (AI & ML)
 Project: SmartRide 🚕
